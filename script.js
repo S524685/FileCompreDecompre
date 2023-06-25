@@ -179,7 +179,7 @@ class Codec {
 		let final_string = ts_length.toString() + '#' + padding_length.toString() + '#' + tree_string + encoded_data;
 		let output_message = "Compression complete and file will be downloaded automatically." + '\n' + "Compression Ratio : " + (data.length / final_string.length).toPrecision(6);
 		return [final_string, output_message];
-	}
+	}  
 
 	decode(data) {
 		let k = 0;
