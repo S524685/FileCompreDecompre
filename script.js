@@ -364,12 +364,12 @@ function onclickChanges2(secMsg, word) {
 	step3.appendChild(msg3);
 }
 
-// function myDownloadFile(fileName, text) {
-// 	let a = document.createElement('a');
-// 	a.href = "data:application/octet-stream," + encodeURIComponent(text);
-// 	a.download = fileName;
-// 	a.click();
-// }
+function myDownloadFile(fileName, text) {
+	let a = document.createElement('a');
+	a.href = "data:application/octet-stream," + encodeURIComponent(text);
+	a.download = fileName;
+	a.click();
+}
 
 function ondownloadChanges(outputMsg) {
 	step3.innerHTML = "";
