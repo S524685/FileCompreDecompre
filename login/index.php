@@ -1,7 +1,7 @@
 <?php
   session_start();
   if(isset($_SESSION['id'])){
-    header("location: ../face.php");
+    header("location: ../index.php");
     exit(); 
   }
   else{
@@ -12,18 +12,12 @@
         <title>Easy Food</title>	
         <link rel="stylesheet" href="style.css">
         <link rel="register.php">
-        <link rel="stylesheet" href="../css/flash_message.css">
+        <link rel="stylesheet" href="flash_message.css">
 
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
       </head>
       <body>
 
-      <?php
-        if ($_SESSION){
-      ?>
-      <?php
-        }
-       ?>
         <div class="cont">
           <div class="form sign-in">
           <h2>Sign In</h2>
@@ -92,8 +86,6 @@
       </body>
       </html>
   
-
-      
 <?php
   }
 ?>

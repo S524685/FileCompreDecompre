@@ -78,5 +78,22 @@ body {
     margin: 0 auto;
     margin-top: 20px;
   }
-  
-  
+  .downloadButton{
+    display: none;
+  }
+  .downloadButton a{
+    color: #0056b3;
+    text-decoration: none;
+  }
+  .downloadButton button{
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    outline: none;
+    color: #0056b3;
+    text-align: center;
+    background-color: #6edb87;
+  }
+  #submitbtn{
+    display: none;
+  }

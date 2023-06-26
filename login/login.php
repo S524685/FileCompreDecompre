@@ -1,6 +1,4 @@
 <?php
-    session_start();
-
 
 if (isset($_POST["submit"])){
 
@@ -40,13 +38,13 @@ if (isset($_POST["submit"])){
     }
     else if ($checkPassword === true) {
         session_start();
-        $_SESSION["id"] = $row["user_id"] ;
+        $_SESSION["id"] = $row["id"] ;
         $_SESSION["email"] = $row["email"] ;
         $_SESSION["name"] = $row["user_name"] ;
-        $_SESSION["admin"] = $row["admin"] ;
         
         $_SESSION["successMessage"] = "Logged In Successfully !";
-        header("location: ../face.php");
+
+        header("location: ../index.php");
         exit();
     }
 

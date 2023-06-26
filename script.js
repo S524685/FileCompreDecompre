@@ -315,18 +315,26 @@ window.onload = function () {
 		else if(uploadedFile.size < 1000){
 			alert("The uploaded file is small in size (" + uploadedFile.size +" bytes) !\nThe compressed file's size might be larger than expected (compression ratio might be small).\nBetter compression ratios are achieved for larger file sizes!");
 		}
-		onclickChanges2("Compressing your file ...\n", "Compressed");
-		var fileReader = new FileReader();
-		fileReader.onload = function (fileLoadedEvent) {
-			let text = fileLoadedEvent.target.result;
-			let [encodedString, outputMsg] = codecObj.encode(text);
-			myDownloadFile(uploadedFile.name.split('.')[0] + "_compressed.txt", encodedString);
-			ondownloadChanges(outputMsg);
-		}
-		fileReader.readAsText(uploadedFile, "UTF-8");
-		document.getElementById("step2").style.display = "none";
-		document.getElementById("step3").style.display = "inline-flex";
+
+		var downloadButton = document.getElementById('downloadBtn');
+		console.log(downloadButton);
+		downloadButton.style.display = "inline";
+
+		
+		// onclickChanges2("Compressing your file ...\n", "Compressed");
+		// var fileReader = new FileReader();
+		// fileReader.onload = function (fileLoadedEvent) {
+		// 	let text = fileLoadedEvent.target.result;
+		// 	let [encodedString, outputMsg] = codecObj.encode(text);
+		// 	myDownloadFile(uploadedFile.name.split('.')[0] + "_compressed.txt", encodedString);
+		// 	ondownloadChanges(outputMsg);
+		// }
+		// fileReader.readAsText(uploadedFile, "UTF-8");
+		// document.getElementById("step2").style.display = "none";
+		// document.getElementById("step3").style.display = "inline-flex";
 	}
+
+	
 
 	decodeBtn.onclick = function () {
 		console.log("decode onclick");

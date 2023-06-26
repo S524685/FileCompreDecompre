@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+  session_start();
+//   if(isset($_SESSION['id'])){
+	  
+//   }
+?>
+
 <html>
 
 <head>
@@ -37,7 +43,13 @@
 			<button type="button" id="encode" class="btn btn-primary" >Compress</button>
 			<button type="button" id="decode" class="btn btn-primary" >De-Compress</button></center>
 		</div>
-		<div class="card" id="step3"></div>
+		<div class="card" id="step3">
+			<div id="downloadBtn" class="downloadButton">
+				<a href="login/index.php">
+					<button>Download</button>
+				</a>
+			</div>
+		</div>
 		<button id="startagain" class="btn btn-info btn-lg" type="button" onclick="location.reload()" >Click here to reload</button>
 	</div>		
 
@@ -47,3 +59,4 @@
 </body>
 
 </html>
+
