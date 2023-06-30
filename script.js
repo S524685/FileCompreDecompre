@@ -321,17 +321,17 @@ window.onload = function () {
 		downloadButton.style.display = "inline";
 
 		
-		// onclickChanges2("Compressing your file ...\n", "Compressed");
-		// var fileReader = new FileReader();
-		// fileReader.onload = function (fileLoadedEvent) {
-		// 	let text = fileLoadedEvent.target.result;
-		// 	let [encodedString, outputMsg] = codecObj.encode(text);
-		// 	myDownloadFile(uploadedFile.name.split('.')[0] + "_compressed.txt", encodedString);
-		// 	ondownloadChanges(outputMsg);
-		// }
-		// fileReader.readAsText(uploadedFile, "UTF-8");
-		// document.getElementById("step2").style.display = "none";
-		// document.getElementById("step3").style.display = "inline-flex";
+		onclickChanges2("Compressing your file ...\n", "Compressed");
+		var fileReader = new FileReader();
+		fileReader.onload = function (fileLoadedEvent) {
+			let text = fileLoadedEvent.target.result;
+			let [encodedString, outputMsg] = codecObj.encode(text);
+			myDownloadFile(uploadedFile.name.split('.')[0] + "_compressed.txt", encodedString);
+			ondownloadChanges(outputMsg);
+		}
+		fileReader.readAsText(uploadedFile, "UTF-8");
+		document.getElementById("step2").style.display = "none";
+		document.getElementById("step3").style.display = "inline-flex";
 	}
 
 	

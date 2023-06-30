@@ -1,8 +1,8 @@
 <?php
   session_start();
-//   if(isset($_SESSION['id'])){
+  if(isset($_SESSION['id'])){
 	  
-//   }
+  }
 ?>
 
 <html>
@@ -23,6 +23,24 @@
 
 <!-- <body onload="onloadfn();"> -->
 <body>
+
+<?php
+  if(isset($_SESSION['id'])){
+?>
+	<div>
+		hello, <?php echo $_SESSION['name']?>
+		<a href="login/logout.php"><button>logout</button></a>
+	</div> 	
+<?php  
+  }else{
+
+?>
+	<div>
+		<a href="login/login.php"><button>login</button></a>
+	</div>
+<?php
+  }
+?>
 	<div class=container-fluid>
 		<h1 id="heading">Compress your text files using Huffmann Compression</h1>
 		<div class="card" id="step1">

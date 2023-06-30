@@ -9,7 +9,7 @@
 
   <html>
       <head>
-        <title>Easy Food</title>	
+        <title>Huffmann File Compressor</title>	
         <link rel="stylesheet" href="style.css">
         <link rel="register.php">
         <link rel="stylesheet" href="flash_message.css">
