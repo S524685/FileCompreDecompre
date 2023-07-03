@@ -44,7 +44,7 @@ if (isset($_POST["submit"])){
         
         $_SESSION["successMessage"] = "Logged In Successfully !";
 
-        header("location: ../index2.php");
+        header("location: ../index.php");
         exit();
     }
 

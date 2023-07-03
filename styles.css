@@ -97,3 +97,93 @@ body {
   #submitbtn{
     display: none;
   }
+
+  /* sbvjks */
+
+
+
+header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  z-index: 100;   
+  background-color: rgb(237,60,59);
+
+}
+
+
+.profile-icon {
+  position: relative;
+
+  
+  margin-left: 10px;
+}
+
+.profile-icon i {
+  font-size: 40px; /* Increase the font size to make it bigger */
+}
+
+
+.hello{
+  font-size: 25px;
+  margin-left: 75%;
+  color: #b8adad;
+  text-transform: capitalize;
+  cursor: pointer;
+
+} 
+
+.dropdown{
+  display: none;
+
+}
+.profile-icon:hover .dropdown{
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  background-color: #ffff; 
+  z-index: 10;
+  border-radius: 10px;
+}
+.dropdown ul{
+  display: block;
+  margin: 10px 5px;
+  padding: 5px;
+  cursor: pointer;
+
+}
+.dropdown ul li{
+  width: 180px;
+  padding: 5px;
+}
+.dropdown ul li a{
+  padding: 0 10px;
+  font-size: 15px;
+  text-align: left;
+  color: #77208B;
+}
+.dropdown ul li a .log-btn{
+  border: none;
+  font-size: 15px;
+  text-align: left;
+  color: #77208B;
+  cursor: pointer;
+}
+.hello {
+   text-align: right; 
+   padding: 7px; 
+   border-radius: 4px;
+  color: #ffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+.title{
+  border: none;
+  background-color: #ffff;
+  text-transform: capitalize;
+  font-weight: bold;
+  list-style-type: none;
+}
+
