@@ -9,8 +9,8 @@
 <html>
 <head>
     <title>Profile Settings</title>
-    <link rel="stylesheet" type="text/css" href="profile.css">
-    <link rel='stylesheet' href='styles.css'>
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link rel='stylesheet' href='css/stylesprev.css'>
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 
 
